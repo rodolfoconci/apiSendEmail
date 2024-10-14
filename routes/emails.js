@@ -8,7 +8,8 @@ const emailsRouter = express.Router();
 emailsRouter.post("/sendEmail", async (req, res) => {
   const { to, name, template, solicitudId } = req.body;
   const html = emailTemplates[template](name, solicitudId);
-  await emailQueue.add({ to, subject: "Solicitud de Ingreso Recibida", html });
+  const job = { to, subject: "Solicitud de Ingreso Recibida", html };
+  await emailQueue.add(job);
   res.status(200).send("Email en la cola para ser enviado");
 });
 
