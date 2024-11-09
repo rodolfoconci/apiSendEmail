@@ -6,9 +6,9 @@ import { emailQueue } from "../data/connection.js";
 const emailsRouter = express.Router();
 
 emailsRouter.post("/sendEmail", async (req, res) => {
-  const { to, name, template, solicitudId } = req.body;
-  const html = emailTemplates[template](name, solicitudId);
-  const job = { to, subject: "Solicitud de Ingreso Recibida", html };
+  const { to, subject, template, params } = req.body;
+  const html = emailTemplates[template](params);
+  const job = { to, subject, html };
   await emailQueue.add(job);
   res.status(200).send("Email en la cola para ser enviado");
 });
