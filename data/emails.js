@@ -86,4 +86,52 @@ export const emailTemplates = {
   </div>
 </div>
 `,
+  bienvenidaAseguradorNuevo: (params) => `
+  <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
+    <div style="max-width: 600px; margin: auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+      <h1 style="color: #ffc107;">¡Hola ${params.aseguradorName}!</h1>
+      <p style="color: #555;">Nos complace informarte que tu registro ha sido recibido y está en proceso de verificación.</p>
+      <p style="color: #555;">Un administrador, revisará tus datos y  aprobará tu cuenta en breve.</p>
+      <p style="color: #555;">Una vez que tu cuenta haya sido aprobada, podrás acceder a todos nuestros servicios y gestionar tus asegurados a través de nuestra plataforma.</p>
+      <p style="color: #555;">Recibirás un correo de confirmación cuando tu cuenta esté lista para operar.</p>
+      <p style="color: #555;">Gracias por confiar en nosotros.</p>
+      <p style="color: #555;"><small>No respondas este email. Para más información, comunícate con tu asegurador o con soporte.</small></p>
+    </div>
+  </div>
+`,
+  altaPoliza: (params) => `
+  <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
+    <div style="max-width: 600px; margin: auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+      <h1 style="color: #28a745;">${params.aseguradoName}</h1>
+      <p style="color: #555;">Nos complace informarte que tu asegurador te registro una póliza.</p>
+      <h2 style="color: #333;">Detalles de la Póliza</h2>
+      <p style="color: #555;">A continuación, los detalles de tu póliza recién generada:</p>
+      <ul style="color: #555;">
+       <li><strong>Aseguradora:</strong> ${params.poliza.aseguradora}</li>
+        <li><strong>Tipo de cobertura:</strong> ${params.poliza.tipoCobertura}</li>
+        <li><strong>Dominio del Vehículo:</strong> ${params.poliza.vehiculo.dominio}</li>
+        <li><strong>Marca y Modelo:</strong> ${params.poliza.vehiculo.marca} ${params.poliza.vehiculo.modelo}</li>
+        <li><strong>Prima asegurada:</strong> ${params.poliza.primaSegura}</li>
+      </ul>
+      <p style="color: #555;">Tu póliza está activa y cubre todos los aspectos detallados anteriormente. Si tienes alguna pregunta o necesitas más detalles, no dudes en ponerte en contacto con tu asegurador.</p>
+      <p style="color: #555;">¡Gracias por confiar en nosotros! Estaremos a tu disposición para cualquier consulta adicional.</p>
+      <p style="color: #555;"><small>No respondas este correo. Para más información, comunícate con tu asegurador o con nuestro soporte.</small></p>
+    </div>
+  </div>
+`,
+  cambioEstadoSolicitud: (params) => `
+  <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
+    <div style="max-width: 600px; margin: auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+      <h1 style="color: #007bff;">Cambio de estado en tu solicitud</h1>
+      <p style="color: #555;">Hola <strong>${params.aseguradoName}</strong>,</p>
+      <p style="color: #555;">Te informamos que el estado de tu solicitud con ID <strong>${params.nroSolicitud}</strong> ha cambiado.</p>
+      <div style="background-color: #e9ecef; padding: 10px; border-radius: 4px;">
+        <strong style="color: #333;">Nuevo estado:</strong> ${params.nuevoEstado}
+      </div>
+      <p style="color: #555;">Si tienes alguna pregunta o necesitas más detalles sobre este cambio, no dudes en contactar a tu asegurador.</p>
+      <p style="color: #555;">Gracias por confiar en nosotros.</p>
+      <p style="color: #555;"><small>No respondas este email. Para más información, comunícate con tu asegurador o con soporte.</small></p>
+    </div>
+  </div>
+`,
 };
