@@ -119,7 +119,7 @@ export const emailTemplates = {
     </div>
   </div>
 `,
-  cambioEstadoSolicitud: (params) => `
+  cambioEstadoSolicitud: (params) =>`
   <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
     <div style="max-width: 600px; margin: auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
       <h1 style="color: #007bff;">Cambio de estado en tu solicitud</h1>
