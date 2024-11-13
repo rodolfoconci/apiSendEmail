@@ -146,7 +146,7 @@ recuperarContrasenia: (params) => `
 <div style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; border-radius: 8px;">
   <div style="max-width: 600px; margin: auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
     <h1 style="color: #009B77;">Recuperación de contraseña</h1>
-    <p style="color: #555;">Hola <strong>${params.aseguradoName}</strong>,</p>
+    <p style="color: #555;">Hola <strong>${params.usuarioName}</strong>,</p>
     <p style="color: #555;">Hemos recibido una solicitud para restablecer tu contraseña. Para continuar con el proceso, por favor haz clic en el siguiente enlace:</p>
     <p><a href="${params.linkRecuperacion}" style="color: #007bff;">Haga clic aquí para recuperar la contraseña</a></p>
     <p style="color: #555;">Si no solicitaste restablecer tu contraseña, puedes ignorar este correo.</p>
