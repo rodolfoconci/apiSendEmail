@@ -32,6 +32,7 @@ export const emailTemplates = {
         <p style="color: #555;">Nos complace informarte que tu registro como asegurado ha sido completado exitosamente.</p>
         <p style="color: #555;">Tu asegurador, <strong>${params.aseguradorName}</strong>, ha procesado tu regitros y pronto recibirás más detalles sobre tus pólizas.</p>
         <p style="color: #555;">Mientras tanto, ya puedes acceder a todos nuestros servicios a través de nuestra aplicación para Android. <strong>Descárgala ahora</strong> desde Google Play para gestionar tu cuenta y estar al tanto de tus beneficios.</p>
+        <p style="color: #555;">Tus credenciales para el ingreso son este e-mail y la contraseña es tu DNI, te recomendamos al cambiarla al inciar sesión.</p>
         <p style="color: #555;">Si tienes alguna duda o necesitas asistencia, no dudes en ponerte en contacto con tu asegurador.</p>
         <p style="color: #555;">Te deseamos una experiencia segura y confiable con nosotros.</p>
         <p style="color: #555;"><small>No respondas este email. Para más información, comunícate con tu asegurador o con soporte.</small></p>
