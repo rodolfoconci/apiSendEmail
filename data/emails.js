@@ -5,7 +5,7 @@ export const emailTemplates = {
           <h1 style="color: #009B77;">Solicitud recibida</h1>
           <p style="color: #555;">Hola <strong>${params.aseguradoName}</strong>,</p>
           <p style="color: #555;">Tu solicitud ha sido recibida con éxito.</p>
-          <p style="color: #555;">Te informaremos sobre el estado de tu solicitud en breve.</p>
+          <p style="color: #555;">Tu asegurador fue notificado y pronto hará la revisión de la misma.</p>
           <p style="color: #555;"><small>No respondas este email.</small></p>
         </div>
       </div>
