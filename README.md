@@ -44,7 +44,7 @@ Esta API permite enviar correos electrónicos a través de un servicio externo d
 npm start dev
 ```
 
-2. Realizar una solicitud POST al endpoint principal "/send-email" con un body en formato JSON como el siguiente:
+2. Realizar una solicitud POST al endpoint principal `/send-email` con un body en formato JSON como el siguiente:
 
 ```json
 {
