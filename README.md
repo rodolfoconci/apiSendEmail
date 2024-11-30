@@ -54,9 +54,8 @@ npm start dev
    }
    ```
 3. Debes incluir un token de autorización en los headers de la solicitud:
-
-```json
-{
-  "Authorization": "Bearer token-estatico"
-}
-```
+    ```json
+    {
+      "Authorization": "Bearer token-estatico"
+    }
+    ```
