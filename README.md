@@ -45,17 +45,20 @@ npm start dev
 ```
 
 2. Realizar una solicitud POST al endpoint principal "/send-email" con un body en formato JSON como el siguiente:
-   ```json
-   {
-     "to": "destinatario@correo.com",
-     "subject": "Asunto del correo",
-     "template": "El template a utilizar",
-     "params": "Parametros en formato json que son utilizados en el template"
-   }
-   ```
+
+```json
+{
+  "to": "destinatario@correo.com",
+  "subject": "Asunto del correo",
+  "template": "El template a utilizar",
+  "params": "Parametros en formato json que son utilizados en el template"
+}
+```
+
 3. Debes incluir un token de autorización en los headers de la solicitud:
-    ```json
-    {
-      "Authorization": "Bearer token-estatico"
-    }
-    ```
+
+```json
+{
+  "Authorization": "Bearer token-estatico"
+}
+```
