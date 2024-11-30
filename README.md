@@ -28,18 +28,20 @@ Esta API permite enviar correos electrónicos a través de un servicio externo d
 ## **Configuración**
 
 1. Creá un archivo .env en la raíz del proyecto y configurá las siguientes variables:
- ```env
-   PORT = puerto
-   EMAIL_USER = tu-mail
-   EMAIL_PASS = password-email
-   TOKEN_ESTATICO = token-estatico
 
+````bash
+  PORT = puerto
+  EMAIL_USER = tu-mail
+  EMAIL_PASS = password-email
+  TOKEN_ESTATICO = token-estatico
+```
 ## **Uso**
 
 1. Iniciar el servidor:
-   ```bash
-   npm start dev
-   ```
+  ```bash
+  npm start dev
+````
+
 2. Realizar una solicitud POST al endpoint principal "/send-email" con un body en formato JSON como el siguiente:
    ```json
    {
