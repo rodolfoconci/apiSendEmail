@@ -28,6 +28,7 @@ Esta API permite enviar correos electrónicos a través de un servicio externo d
 ## **Configuración**
 
 1. Creá un archivo .env en la raíz del proyecto y configurá las siguientes variables:
+ ```env
    PORT = puerto
    EMAIL_USER = tu-mail
    EMAIL_PASS = password-email
