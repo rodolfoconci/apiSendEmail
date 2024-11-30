@@ -7,7 +7,7 @@ Esta API permite enviar correos electrónicos a través de un servicio externo d
 ## **Requisitos previos**
 
 1. **Node.js** (versión mínima recomendada: `20.12.2`).
-2. **npm** o **yarn** como gestor de paquetes.
+2. **npm** como gestor de paquetes.
 3. Tener configuradas las variables de entorno para la conexión con la API de correos.
 
 ## **Instalación**
