@@ -62,3 +62,4 @@ npm start dev
   "Authorization": "Bearer token-estatico"
 }
 ```
+4. Para agregar más templates debes configurarlos en `/data/emails`
