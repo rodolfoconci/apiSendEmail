@@ -5,7 +5,7 @@ import { emailQueue } from "../data/connection.js";
 
 const emailsRouter = express.Router();
 
-emailsRouter.post("/sendEmail", async (req, res) => {
+emailsRouter.post("/sendEmail", auth, async (req, res) => {
   try {
     const { to, subject, template, params } = req.body;
     const html = emailTemplates[template](params);
